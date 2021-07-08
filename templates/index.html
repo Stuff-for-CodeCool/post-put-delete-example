@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Pagina principala{% endblock %}
+
+{% block content %}
+
+<section>
+    <p><button data-function="add" data-id="item-1">Add item 1</button></p>
+    <p><button data-function="edit" data-id="item-1">Edit item 1</button></p>
+    <p><button data-function="delete" data-id="item-1">Remove item 1</button></p>
+</section>
+
+<section>
+    <p><button data-function="add" data-id="item-2">Add item 2</button></p>
+    <p><button data-function="edit" data-id="item-2">Edit item 2</button></p>
+    <p><button data-function="delete" data-id="item-2">Remove item 2</button></p>
+</section>
+
+<section id="result">{{ result }}</section>
+
+{% endblock %}
+
+{% block script %}
+<script src="{{ url_for('static', filename='js/functions.js') }}" defer></script>
+{% endblock %}
