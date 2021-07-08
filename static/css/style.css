@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    width: 80%;
+    margin: 1em auto;
+    justify-content: space-around;
+}
+
+#result {
+    flex-basis: 100%;
+}
